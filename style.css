@@ -1,0 +1,288 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+   
+}
+
+
+header{
+    flex-basis: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 1.3fr;
+    padding: 30px 0 0 40px;
+    background-image: url('images/background.png');
+
+}
+
+
+nav{
+    grid-area: 1 / 1 /2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav button{
+    position: relative;
+    left: -45px;
+    height: 37px;
+    width: 146px;
+    border-radius: 35px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+
+.top-left-container{
+    grid-area: 2 / 1 /3/2;
+    align-self: center;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    max-width: 20ch;
+    font-size: 2.8rem;
+}
+
+.top-left-container p{
+    max-width: 57ch;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #942F57;
+}
+
+button{
+    box-shadow:20px 19px 25px -11px rgba(0, 0, 0, 0.14);
+}
+
+#startBtn{
+    font-size: 0.9rem;
+    height: 45px;
+    width: 45%;
+    border-radius: 34px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: linear-gradient(315deg, #e64980 5%, #ff8787 95%);
+}
+
+
+.top-right-container{
+    grid-area: 2 / 2 / 3 /3;
+    justify-self: center;
+}
+
+.top-right-container img{
+    width: 600px;
+}
+
+main{
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    margin: 175px;
+}
+
+
+main img{
+    height: 465px;
+}
+
+.card{
+    flex-basis: 33.3%;
+    margin: 24px 0px;
+    display: flex;
+    align-items: center;
+    box-shadow:
+    0px 0px 32px -5px rgba(0, 0, 0, 0.32);
+    justify-content: space-around;
+    padding: 43px;
+    border-radius: 25px;
+
+    transition: all 0.5s;
+}
+
+.head-card{
+    padding-left: 98px;
+}
+
+.bound-cards{
+    position: relative;
+    left: -110px;
+}
+
+.mid-card-2{
+    justify-content: space-evenly;
+    right: -110px;
+    position: relative;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+main p{
+    max-width: 54ch;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #ad9a9a;
+}
+    
+footer{
+    display: flex;
+    height: 60vh;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 75px;
+    position: relative;
+    background-image: url(images/background2.png);
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;;
+}
+
+.footcard{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* align-items: flex-start; */
+}
+
+.floating-card{
+    max-width: 540px;
+    width: 100%;
+    height: 216px;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.32);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 353px;
+    background-color: white;
+    color: black;
+}
+
+.floating-card button{
+    border-radius: 25px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    height: 55px;
+    max-width: 310px;
+    width: 100%;
+    background-color:#FE52C0;
+    box-shadow: 0px 0px 32px -5px rgba(0, 0, 0, 0.32);
+    color: white;
+}
+
+.most-right{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+footer div{
+ font-family: 'Poppins', sans-serif;
+/* font-family: 'Open Sans', sans-serif; */
+}
+
+#lorem {
+    max-width: 39ch;
+    margin-top: 45px;
+  }
+
+main img{
+    transition: all 0.4s;
+}
+
+header{
+    transition: all 0.5s;
+}
+
+.top-right-container img{
+    transition: all 0.5s;
+}
+
+nav{
+    transition: all 0.5s;
+}
+
+.top-left-container h2,.top-left-container p{
+    transition: all 0.5s;
+}
+
+
+  @media(max-width:600px){
+
+    header{
+        padding: 30px;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav button{
+        position: relative;
+        left: 0px;
+    }
+
+    .top-left-container h2,.top-left-container p{
+        text-align: center;
+    }
+
+    .top-left-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .top-right-container img{
+        width: 100%;
+        max-width: 450px;
+    }
+
+    #startBtn{
+        align-self: center;
+    }
+
+
+    .card{
+        /* width: 100%; */
+        background-color: red;
+        left: 0px;
+        right: 0px;
+        
+    }
+
+    
+  }
