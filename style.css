@@ -204,7 +204,9 @@ h4{
     gap: 30px;
 }
 
-
+.most-right img{
+    width: 40px;
+}
 
 footer div{
  font-family: 'Poppins', sans-serif;
