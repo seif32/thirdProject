@@ -204,9 +204,11 @@ h4{
     gap: 30px;
 }
 
-.most-right img{
+.social{
     width: 40px;
 }
+
+
 
 footer div{
  font-family: 'Poppins', sans-serif;
@@ -284,6 +286,17 @@ nav{
         left: 0px;
         right: 0px;
         
+    }
+
+    footer{
+        display: flex;
+        flex-direction:column;
+  
+    }
+
+    .most-right img{
+        background-color: red;
+        width: 8%;
     }
 
     
