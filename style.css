@@ -208,6 +208,8 @@ h4{
     width: 40px;
 }
 
+
+
 footer div{
  font-family: 'Poppins', sans-serif;
 /* font-family: 'Open Sans', sans-serif; */
@@ -239,7 +241,7 @@ nav{
 }
 
 
-  @media(max-width:741px){
+  @media(max-width:600px){
 
     header{
         padding: 30px;
@@ -284,6 +286,17 @@ nav{
         left: 0px;
         right: 0px;
         
+    }
+
+    footer{
+        display: flex;
+        flex-direction:column;
+  
+    }
+
+    .most-right img{
+        background-color: red;
+        width: 8%;
     }
 
     
