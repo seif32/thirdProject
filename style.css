@@ -177,7 +177,7 @@ main img{
 }
 
 .bound-cards:hover:before{
-    transform: scale(38);
+    transform: scale(34.5);
 }
 
 .mid-card-2:before{
@@ -193,7 +193,7 @@ main img{
 }
 
 .mid-card-2:hover:before{
-    transform: scale(49);
+    transform: scale(44);
 }
 
 
